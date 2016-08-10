@@ -1,0 +1,22 @@
+{
+  "name": "rrw-project-starter",
+  "version": "1.0.0",
+  "description": "\"custom react-redux-wepback starter\"",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sean-johnson/rrw-project-starter.git"
+  },
+  "author": "Sean Johnson",
+  "license": "BY-NC",
+  "bugs": {
+    "url": "https://github.com/sean-johnson/rrw-project-starter/issues"
+  },
+  "homepage": "https://github.com/sean-johnson/rrw-project-starter#readme"
+}
