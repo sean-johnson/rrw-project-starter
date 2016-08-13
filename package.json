@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "babel-tape-runner test/*.js -| tap-spec",
-    "start": "nodemon server/app.js",
+    "start": "nodemon server/app.js --ignore components",
     "css:build": "node-sass --include-path scss client/scss/main.scss public/resources/styles/style.css",
     "css:watch": "nodemon -e scss -x \" npm run css:build \""
   },
@@ -41,6 +41,8 @@
     "nodemon": "^1.10.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.0",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.12.2"
   }
 }

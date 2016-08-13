@@ -1,5 +1,5 @@
 const path = require('path')
-
+const webpack = require('webpack')
 
 module.exports = {
   devtool: 'inline-source-map',
@@ -11,6 +11,11 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/',
   },
+  plugins: [
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ],
   module: {
     loaders: [{
       test: /\.js$/,
