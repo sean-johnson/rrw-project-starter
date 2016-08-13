@@ -4,10 +4,10 @@ const colors = require('colors')
 
 const app = express()
 
-app.use(express.static('./public'))
+app.use(express.static(path.resolve(__dirname, '../public')))
 
 app.use('/', function (req, res) {
-  res.sendFile(path.resolve('public/index.html'))
+  res.sendFile(path.resolve(__dirname, '../public/index.html'))
 })
 
 const port = process.env.PORT || 3000
